@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Christian Ezekiel L. Carvajal</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            color: #fdfdfd;
+            background-color: #1c1c1c;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: linear-gradient(90deg, #ffc107, #ffb300);
+            color: #222;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #ff8c00;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px; /* Added space below header */
+        }
+        .intro-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            gap: 20px; /* Space between text and image */
+        }
+        .intro-text {
+            flex: 3;
+        }
+        .intro-text h2 {
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+        .intro-text p {
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+        .intro-image {
+            flex: 1;
+            background-color: #555;
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto 20px auto; /* Added space below main */
+        }
+        h2 {
+            text-align: center;
+            color: #ffc107;
+            margin-bottom: 20px;
+        }
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between project cards */
+            justify-content: center;
+        }
+        .project-item {
+            background: #333;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer; /* Pointer cursor to indicate it's clickable */
+            text-decoration: none; /* Remove the blue underline */
+        }
+        .project-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        .project-item h3 {
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+        .project-item p {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        .secret-section {
+            text-align: center;
+            margin-top: 40px; /* Space above secret section */
+        }
+        .secret-section p {
+            font-size: 1.2rem;
+            color: #ffc107;
+            margin-bottom: 20px;
+        }
+        .secret-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #1c1c1c;
+            background-color: #ffd54f;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+        }
+        .secret-button:hover {
+            color: #ffd54f;
+            background-color: transparent;
+            border: 2px solid #ffd54f;
+        }
+        footer {
+            background-color: #121212;
+            color: #ccc;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 2px solid #333;
+            margin-top: 20px; /* Space above footer */
+        }
+
+        .contact-section {
+            position: absolute;
+            bottom: -130px;
+            right: -1px;
+            background-color: #333;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 250px;
+        }
+
+        .contact-section p {
+            font-size: 0.9rem;
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #1c1c1c;
+            background-color: #ffd54f;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .contact-button:hover {
+            color: #ffd54f;
+            background-color: transparent;
+            border: 2px solid #ffd54f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing my work and achievements in Intro to Computing Laboratory</p>
+    </header>
+    <section class="intro-container">
+        <div class="intro-text">
+            <h2>Hi, I'm Christian Ezekiel L. Carvajal</h2>
+            <p>A 1st-year BS Computer Science student at the University of Perpetual Help System Dalta - Molino Campus.</p>
+            <p>This portfolio highlights my journey, creativity, and dedication to learning. Explore my projects and witness how each piece reflects my passion for computing.</p>
+        </div>
+        <div class="intro-image">
+            Your Photo
+        </div>
+    </section>
+    <main>
+        <h2>Explore My Projects</h2>
+        <div class="project-list">
+            <a href="URL_OF_PROJECT_1" class="project-item">
+                <h3>My First Blog</h3>
+                <p>Explore the Historical Perspective on Computing and an Introduction to IT Basics in this 2-page blog.</p>
+            </a>
+            <a href="URL_OF_PROJECT_2" class="project-item">
+                <h3>Personal Website</h3>
+                <p>My journey in creating a sleek, user-friendly personal website to showcase my skills and interests.</p>
+            </a>
+            <a href="URL_OF_PROJECT_3" class="project-item">
+                <h3>AskJeeves Reimagined</h3>
+                <p>A recreation of the AskJeeves webpage, blending nostalgic design with modern functionality.</p>
+            </a>
+            <a href="URL_OF_PROJECT_4" class="project-item">
+                <h3>My Favorite Playlist</h3>
+                <p>An interactive music playlist website with a stylish interface and seamless navigation.</p>
+            </a>
+            <a href="URL_OF_PROJECT_5" class="project-item">
+                <h3>Luxe Horizon</h3>
+                <p>A fashion website showcasing diverse collections with interactive features for a luxury experience.</p>
+            </a>
+            <a href="URL_OF_PROJECT_6" class="project-item">
+                <h3>Luxe Horizon Dashboard</h3>
+                <p>A data dashboard providing insights and metrics for the Luxe Horizon fashion website.</p>
+            </a>
+        </div>
+        <div class="secret-section">
+            <p>Want to see more? Discover exclusive projects below!</p>
+            <a href="URL_OF_SECRET_PAGE" class="secret-button">Explore More Projects</a>
+        </div>
+        
+        <div class="contact-section">
+            <p>Click the button below to see my contact information:</p>
+            <a href="https://linktr.ee/iziikiel1908" target="_blank" class="contact-button">CONNECT WITH ME</a>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Christian Ezekiel L. Carvajal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
